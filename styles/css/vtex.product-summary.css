@@ -1,0 +1,26 @@
+.container {
+  background-color: #424242;
+  padding: 25px;
+}
+
+.nameContainer {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.brandName {
+  color: #ffffff;
+}
+
+.image {
+  border-radius: 5px;
+}
+
+.sellingPrice {
+  color: #59ff00;
+  font-size: 1.6rem;
+}
+
+.sellingPriceLabel {
+  display: none;
+}

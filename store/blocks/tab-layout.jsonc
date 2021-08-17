@@ -1,0 +1,92 @@
+{
+  "tab-layout#home": {
+    "children": ["tab-list#home", "tab-content#home"],
+    "props": {
+      "blockClass": "menu",
+      "defaultActiveTabId": "menu1"
+    }
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#menu1", "tab-list.item#menu2"]
+  },
+  "tab-list.item#menu1": {
+    "props": {
+      "tabId": "menu1",
+      "label": "Menu 1",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#menu2": {
+    "props": {
+      "tabId": "menu2",
+      "label": "Menu 2"
+    }
+  },
+  "tab-content#home": {
+    "children": ["tab-content.item#menu1", "tab-content.item#menu2"]
+  },
+  "tab-content.item#menu1": {
+    "children": ["list-context.image-list#tab1", "flex-layout.row#shelf1"],
+    "props": {
+      "tabId": "menu1"
+    }
+  },
+  "tab-content.item#menu2": {
+    "children": ["list-context.image-list#tab2", "flex-layout.row#shelf2"],
+    "props": {
+      "tabId": "menu2"
+    }
+  },
+
+  "flex-layout.row#shelf1": {
+    "children": ["list-context.product-list#home1"]
+  },
+  "flex-layout.row#shelf2": {
+    "children": ["list-context.product-list#home2"]
+  },
+
+  "list-context.image-list#tab1": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 300,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1400x300.png?text=Imagem%2001",
+          "mobileImage": "https://via.placeholder.com/300x300.png?text=Imagem%2001%20Mobile"
+        },
+        {
+          "image": "https://via.placeholder.com/1400x300.png?text=Imagem%2002",
+          "mobileImage": "https://via.placeholder.com/300x300.png?text=Imagem%2002%20Mobile"
+        }
+      ]
+    }
+  },
+  "list-context.image-list#tab2": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 300,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1400x300.png?text=Imagem%2003",
+          "mobileImage": "https://via.placeholder.com/300x300.png?text=Imagem%2003%20Mobile"
+        },
+        {
+          "image": "https://via.placeholder.com/1400x300.png?text=Imagem%2004",
+          "mobileImage": "https://via.placeholder.com/300x300.png?text=Imagem%2004%20Mobile"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      // "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  }
+}

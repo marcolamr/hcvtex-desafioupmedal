@@ -1,0 +1,53 @@
+{
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-name",
+      "stack-layout#prodsum",
+      "product-summary-price",
+      "add-to-cart-button"
+    ]
+  },
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#shelf"
+    ]
+  },
+
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
+    }
+  },
+  "list-context.product-list#home1": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#products"],
+    "props": {
+      "orderBy": "OrderByNameASC",
+      "maxItems": 8
+      // "category": "1"
+    }
+  },
+  "list-context.product-list#home2": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#products"],
+    "props": {
+      "orderBy": "OrderByNameDESC",
+      "maxItems": 8
+      // "category": "1/10"
+    }
+  },
+  "slider-layout#products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+}
