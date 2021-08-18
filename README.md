@@ -7,6 +7,11 @@ Tema desenvolvido no padrão Vtex IO, como parte do treinamento Hiring Coders, p
 
 Usar o site da [UpMedal](https://www.upmedal.com/desafios) como referência e reestruturar no padrão Vtex IO, utilizando **React e Typescript**. Criar um **componente customizado** de captura de leads e integrar com a *Api Gateway da AWS e salvar os dados no DynamoDB*. Como desafio opcional, foi desenvolvido um **componente customizado para a página de admin** que lista todos os leads cadastrados na loja.
 
+## Apps Complementares
+
+[Captura de Leads](https://github.com/marcolamr/hcvtex-desafioupmedal-applead)
+[Admin dos Leads Capturados](https://github.com/marcolamr/hcvtex-desafioupmedal-appleadadmin)
+
 ## Pedras no caminho
 
 O treinamento em questão é intenso e o tempo para aprender tantas tecnologias foi bem desafiador. Algumas tecnologias que aprendi foi **Node, React, Typescript, GraphQL**, entre outras. Além dos cursos de *soft skills*. Nesse projeto dediquei aproximadamente 40h de trabalho e precisei me dedicar boas horas na documentação da AWS para configurar corretamente o DynamoDB e integrar tudo com a API Gateway, criar os mapeamentos corretos e lidando com CORS. 
